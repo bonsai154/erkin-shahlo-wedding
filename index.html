@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадебное приглашение</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff9f9;
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+        }
+        .photo {
+            display: inline-block;
+            margin: 20px;
+        }
+        .photo img {
+            width: 220px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .caption {
+            margin-top: 8px;
+            font-weight: bold;
+        }
+        h1 {
+            margin: 30px 0;
+            font-size: 28px;
+        }
+        .details {
+            font-size: 18px;
+            margin: 30px 0;
+        }
+        .rsvp {
+            background-color: #ffe6e6;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        input, button {
+            margin: 5px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #ff7f7f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e06060;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo">
+            <img src="shahlo.jpg" alt="Шахло">
+            <div class="caption">Шахло</div>
+        </div>
+        <div class="photo">
+            <img src="erkin.jpg" alt="Эркин">
+            <div class="caption">Эркин</div>
+        </div>
+
+        <h1>Э + Ш = ❤️</h1>
+
+        <div class="details">
+            С радостью приглашаем вас на нашу свадьбу!<br><br>
+            📅 <strong>15 августа</strong><br>
+            📍 <strong>Ресторан Zarkhal Premium</strong><br>
+        </div>
+
+        <div class="rsvp">
+            <h2>Подтвердите участие</h2>
+            <form>
+                <input type="text" name="name" placeholder="Ваше имя" required><br>
+                <input type="tel" name="phone" placeholder="Номер телефона" required><br>
+                <button type="submit">Я приду!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
