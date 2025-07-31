@@ -2,103 +2,88 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Свадьба Эркин и Шахло</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Quicksand', sans-serif;
-      background: linear-gradient(145deg, #ffffff, #00fff7, #000000);
-      background-size: 200% 200%;
-      animation: gradientShift 15s ease infinite;
-      color: #fff;
-    }
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    header {
-      text-align: center;
-      padding: 4rem 1rem;
-      background: rgba(0, 0, 0, 0.7);
-    }
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
-      color: #00fff7;
-      margin-bottom: 0.5rem;
-    }
-    header h2 {
-      font-size: 1.5rem;
-      color: #ffffff;
-    }
-    section {
-      padding: 2.5rem 1.5rem;
-      border-top: 1px solid #ffffff33;
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-    section h2 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2rem;
-      color: #00fff7;
-      margin-bottom: 1rem;
-    }
-    section p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 1rem;
-      color: #ccc;
-      background-color: rgba(0,0,0,0.8);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба Эркина и Шахло</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: url('wedding_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-shadow: 0 0 5px #000;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            backdrop-filter: brightness(0.8);
+        }
+
+        h1, h2 {
+            color: #00fff7;
+        }
+
+        .divider {
+            height: 2px;
+            margin: 40px auto;
+            width: 60%;
+            background: linear-gradient(to right, #00fff7, #ffffff, #00fff7);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            section {
+                padding: 30px 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Эркин + Шахло = ❤️</h1>
-    <h2>Вы приглашены на нашу свадьбу</h2>
-  </header>
+    <section>
+        <h1>Эркин + Шахло = ❤️</h1>
+        <p>Добро пожаловать на нашу свадебную страницу!</p>
+    </section>
 
-  <section>
-    <h2>Наша история</h2>
-    <p>Мы встретились случайно, но с первой минуты поняли — это судьба. Один взгляд, одна улыбка — и началась наша история, которая теперь ведёт к самому счастливому дню.</p>
-  </section>
+    <div class="divider"></div>
 
-  <section>
-    <h2>О Свадьбе</h2>
-    <p>📅 Дата: 15 августа 2025<br>
-       🕕 Время: 18:00<br>
-       📍 Место: Ресторан Zarkhal Premium</p>
-  </section>
+    <section>
+        <h2>История нашей первой встречи</h2>
+        <p>Однажды весенним днем, случайная встреча превратилась в историю любви, которую мы бережем до сих пор.</p>
+    </section>
 
-  <section>
-    <h2>Как нас найти</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47983.698211138625!2d69.2400730900572!3d41.311081632150096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b6c0e25f13f%3A0x6ff706f9799851ff!2sZarkhal%20Premium!5e0!3m2!1sru!2s!4v1694000000000!5m2!1sru!2s" allowfullscreen loading="lazy"></iframe>
-  </section>
+    <div class="divider"></div>
 
-  <section>
-    <h2>Речь для молодожёнов</h2>
-    <p>Дорогие Эркин и Шахло! Пусть каждый день вашей совместной жизни будет таким же счастливым и волшебным, как этот. Пусть ваш союз будет крепким, как сталь, и светлым, как неон, освещающий ваш путь в будущее.</p>
-  </section>
+    <section>
+        <h2>Информация о свадьбе</h2>
+        <p>📅 Дата: 15 августа 2025<br>
+        📍 Ресторан: Zarkhal Premium</p>
+    </section>
 
-  <section>
-    <h2>Слова гостям</h2>
-    <p>Дорогие гости! Мы счастливы, что вы разделяете этот день с нами. Без вас наша история не была бы полной. Спасибо за вашу любовь, тепло и поддержку — вы делаете наш праздник незабываемым!</p>
-  </section>
+    <div class="divider"></div>
 
-  <footer>С любовью, Эркин и Шахло 💫</footer>
+    <section>
+        <h2>Речь для молодожёнов</h2>
+        <p>Дорогие Эркин и Шахло, пусть ваша жизнь будет полна света, радости и приключений, а любовь только крепнет с каждым годом.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>Для наших любимых гостей</h2>
+        <p>Спасибо, что вы с нами в этот особенный день. Вы — часть нашей истории, и мы искренне рады разделить с вами этот момент.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>Как добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 </body>
 </html>
